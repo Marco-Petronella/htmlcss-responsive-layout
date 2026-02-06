@@ -1,4 +1,11 @@
-/* Soluzione qui */
+/* Soluzione qui 
+
+Il video e le altre informazioni della ricetta si dispongono uno accanto all'altro
+Compaiono i nomi delle piattaforme social
+Nel footer i dati del sito e il menu di navigazione di dispongono sulla stessa linea ma su lati opposti
+
+
+*/
 
 
 /* Modalità Tablet (sopra i 768px) */
@@ -48,4 +55,24 @@
     display: block;
 }
 /* l'immagine nella descrizione della ricetta viene circondata dal testo */
+ .clearfix {
+    img {
+        float: left;
+        margin: 1rem;
+    }
+ }
+}
+
+/* Modalità Desktop(sopra i 992px) */
+@media screen and (min-width: 991px) {
+    /* La grandezza del titolo della ricetta aumenta ancora di più */
+    .recipe-name {
+        font-size: 3rem;
+    }
+    /* Le informazioni della ricetta tornano a disporsi una sotto l'altra */
+.quick-notes {
+        ul {
+            display: block;
+        }
+    }
 }
