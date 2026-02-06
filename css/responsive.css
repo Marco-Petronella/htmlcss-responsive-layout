@@ -1,39 +1,30 @@
-/* Soluzione qui 
-
-Il video e le altre informazioni della ricetta si dispongono uno accanto all'altro
-Compaiono i nomi delle piattaforme social
-Nel footer i dati del sito e il menu di navigazione di dispongono sulla stessa linea ma su lati opposti
-
-
-*/
+/* Soluzione qui */
 
 
 /* Modalità Tablet (sopra i 768px) */
 @media screen and (min-width:767px) {
+
     /* Il logo nell'header si allinea a sinistra */
     #topbar {
         justify-content: left;
     }
-    /* Il padding del contenuto principale della pagina aumenta */
-    .recipe-info {
-        padding: 50px;
-    }
 
-    .well {
-        padding: 30px;
-    }
+    /* Il padding del contenuto principale della pagina aumenta */
 
     .presentation {
         padding: 30px;
     }
+
     /* Compare il testo "(Dolce Tradizionale)" */
     .recipe-origin {
         display: inline;
     }
+
     /* La grandezza del titolo diventa più grande */
     .recipe-name {
         font-size: 2rem;
     }
+
     /* Le informazioni della ricetta sotto il video si dispongono a griglia */
     .quick-notes {
         ul {
@@ -42,37 +33,66 @@ Nel footer i dati del sito e il menu di navigazione di dispongono sulla stessa l
             gap: 15px;
         }
     }
+
     .quick-notes li {
         width: calc((100%/3) - (15px*2)/3);
-}
-/* I bottoni social si allargano */
-.btn {
-    font-size: 28px;
-}
-
-/* compare il banner pubblicitario */
-.ads {
-    display: block;
-}
-/* l'immagine nella descrizione della ricetta viene circondata dal testo */
- .clearfix {
-    img {
-        float: left;
-        margin: 1rem;
     }
- }
+
+    /* I bottoni social si allargano */
+    .btn {
+        font-size: 20px;
+    }
+
+    /* compare il banner pubblicitario */
+    .ads {
+        display: block;
+    }
+
+    /* l'immagine nella descrizione della ricetta viene circondata dal testo */
+    .clearfix {
+        img {
+            float: left;
+            margin: 1rem;
+        }
+    }
 }
 
 /* Modalità Desktop(sopra i 992px) */
 @media screen and (min-width: 991px) {
+
     /* La grandezza del titolo della ricetta aumenta ancora di più */
     .recipe-name {
         font-size: 3rem;
     }
+
     /* Le informazioni della ricetta tornano a disporsi una sotto l'altra */
-.quick-notes {
+    .quick-notes {
         ul {
             display: block;
         }
+    }
+
+    /* Il video e le altre informazioni della ricetta si dispongono uno accanto all'altro */
+    .recipe-card {
+        display: flex;
+    }
+
+    .recipe-video {
+        width: 70%;
+    }
+    .quick-notes li {
+        width: auto;
+    }
+    /* Compaiono i nomi delle piattaforme social */
+    .social-networks .label {
+        display: inline;
+    }
+
+    /* Nel footer i dati del sito e il menu di navigazione di dispongono sulla stessa linea ma su lati opposti */
+
+    
+    /* aggiunto per visualizzazione più pulita in modalità desktop */
+    .container {
+        max-width: 1600px;
     }
 }
