@@ -1,20 +1,13 @@
 /* Soluzione qui */
-/* Modalità Tablet (sopra i 768px)
 
-X Il logo nell'header si allinea a sinistra
-x Il padding del contenuto principale della pagina aumenta
-X Compare il testo "(Dolce Tradizionale)"
-X La grandezza del titolo diventa più grande
-Le informazioni della ricetta sotto il video si dispongono a griglia
-I bottoni social si allargano
-compare il banner pubblicitario
-l'immagine nella descrizione della ricetta viene circondata dal testo */
 
+/* Modalità Tablet (sopra i 768px) */
 @media screen and (min-width:767px) {
+    /* Il logo nell'header si allinea a sinistra */
     #topbar {
         justify-content: left;
     }
-
+    /* Il padding del contenuto principale della pagina aumenta */
     .recipe-info {
         padding: 50px;
     }
@@ -26,12 +19,33 @@ l'immagine nella descrizione della ricetta viene circondata dal testo */
     .presentation {
         padding: 30px;
     }
-
+    /* Compare il testo "(Dolce Tradizionale)" */
     .recipe-origin {
         display: inline;
     }
-
+    /* La grandezza del titolo diventa più grande */
     .recipe-name {
         font-size: 2rem;
     }
+    /* Le informazioni della ricetta sotto il video si dispongono a griglia */
+    .quick-notes {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+    }
+    .quick-notes li {
+        width: calc((100%/3) - (15px*2)/3);
+}
+/* I bottoni social si allargano */
+.btn {
+    font-size: 28px;
+}
+
+/* compare il banner pubblicitario */
+.ads {
+    display: block;
+}
+/* l'immagine nella descrizione della ricetta viene circondata dal testo */
 }
