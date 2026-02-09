@@ -1,6 +1,5 @@
 /* Soluzione qui */
 
-
 /* Modalità Tablet (sopra i 768px) */
 @media screen and (min-width:767px) {
 
@@ -89,10 +88,31 @@
     }
 
     /* Nel footer i dati del sito e il menu di navigazione di dispongono sulla stessa linea ma su lati opposti */
-
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    address {
+        text-align: start;
+    }
     
     /* aggiunto per visualizzazione più pulita in modalità desktop */
     .container {
         max-width: 1600px;
     }
+}
+
+/* Modalità Large Mobile (576px) */
+@media screen and (min-width: 575px) {
+    /* I bottoni social si allagano già su dispositivi mobile più grandetti (576px) */
+    .btn {
+        font-size: 20px;
+    }    
+    /* l'immagine nella descrizione della ricetta viene circondata dal testo anche su mobile ma solo se c'è spazio sufficiente, quindi a partire da 576px */
+    .presentation {
+        img {
+            float: left;    
+        }
+    }
+
 }
