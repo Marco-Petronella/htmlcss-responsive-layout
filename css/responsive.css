@@ -94,12 +94,7 @@
     }
     address {
         text-align: start;
-    }
-    
-    /* aggiunto per visualizzazione più pulita in modalità desktop */
-    .container {
-        max-width: 1600px;
-    }
+    }  
 }
 
 /* Modalità Large Mobile (576px) */
